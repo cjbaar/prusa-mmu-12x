@@ -1,8 +1,8 @@
 # Prusa MMU2S Modification for 12 Filaments
 ## Overview
 This is the result of several months of designing and testing new ideas for increasing the filament count of the Prusa MMU2S. I tried several variations, but ended up coming back to something that is largely based on the original Prusa model. Some of the major adjustments include:
-* increase filament count from 5 to 12
-* reverse position of pulley and idler motors, to maximize the use of the 110mm pulley shaft
+* increased filament count from 5 to 12
+* reversed position of pulley and idler motors, to maximize the use of the 110mm pulley shaft
 * moved FINDA to the rear of the selector, in an attempt to minimize issues where the filament clears the ball but then still fails to fully retract
 * selector has integrated threads for PTFE quick-connect
 * moved control board beneath the body (inspiration thanks to [univeraljoint](https://www.thingiverse.com/universaljoint/about))
@@ -13,26 +13,26 @@ These items and related code are provided as-is, with no warranty -- express or 
 
 That being said, I have had a great deal of luck using this model, or I wouldn't be sharing it.
 ## Software & Firmware
-In order to use this model of the MMU, you will need to use the following firmware for the MMU board.
+In order to use this model of the MMU, you will need to use the following firmware for the MMU board. This has been branched from version 1.0.6, but has so many significant changes that I will not be attempting to submit a pull request.
 https://github.com/cjbaar/MM-control-01
 
-In addition, you will need to change the firmware on the printer itself, because the existing code will ignore any tool changes above T4. I have submitted a pull request to include these changes in the base, but it is unlikely to be merged anytime soon.
+In addition, you will need to change the firmware on the printer itself, because the existing code will ignore any tool changes above T4. I have submitted a pull request to correct this in the base, but it is unlikely to be merged anytime soon.
 https://github.com/cjbaar/Prusa-Firmware
 
-Finally, you will need to create a new printer model in Prusa Slicer that is setup for 12 filaments. I will not cover all the steps here, but I had no issues doing so in version 2.1.0+.
+Finally, you will need to create a new printer model in Prusa Slicer that is setup for 12 filaments. I had no issues doing this in version 2.1.0+.
 
 ## Parts
 ### Printed Parts
 Print one of each included STL file, with the following exceptions:
 * choose either m6 or m10 thread for selector
 * choose bracket type (traditional frame mount or table-top)
-* print 4 copies of idler-rings.stl
+* print four copies of idler-rings.stl
 * screen is optional, if using OLED display
 * wrench is optional, but assists with assembling the inlet manifold
 
-I printed all parts with relatively slow speed at 0.2mm layers. I also printed most everything with PLA -- in particular, the inlet and selector -- because I get better consistency and tolerances for bearings and filament paths. In my experience, printing in PETG may make some fittings tighter.
+I printed all parts with relatively slow speed and 0.2mm layers. I also printed most everything with PLA -- in particular, the inlet and selector -- because I get better consistency and tolerances for bearings and filament paths. In my experience, printing in PETG may make some fittings tighter.
 
-For the lower and selector models, I have included a mod which I recommended printing with 100% infill.
+For the lower and selector prints, there are related mod files, which I recommended printing with 100% infill.
 
 ### Additional Parts
 The following pieces are required for assembly. Items in italics may not be included in the original Prusa MMU2, but should be easily found on Amazon (or your world domination retailer of choice).
