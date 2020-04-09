@@ -35,7 +35,7 @@ I printed all parts with relatively slow speed at 0.2mm layers. I also printed m
 For the lower and selector models, I have included a mod which I recommended printing with 100% infill.
 
 ### Additional Parts
-The following pieces are required for assembly. Items in italics may not included in the original Prusa MMU2, but should be easily found on Amazon (or your world domination retailer of choice).
+The following pieces are required for assembly. Items in italics may not be included in the original Prusa MMU2, but should be easily found on Amazon (or your world domination retailer of choice).
 #### Lower
 * (1x) Prusa MMU "Extruder" motor (std d-shaft)
 * (1x) Prusa MMU "Pulley" motor (110mm d-shaft)
@@ -88,4 +88,5 @@ The following pieces are required for assembly. Items in italics may not include
 * *(1x) OLED SSD1306 display, I2C, 128x64*
 * *(4x) m2x8mm screw*
 * *(1x) m3x8mm screw*
+* (1x) m3 square nut
 * *(4x) 200mm F/F jumper wires*
