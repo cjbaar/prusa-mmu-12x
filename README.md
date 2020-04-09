@@ -1,4 +1,4 @@
-# MMU2S Update for 12 filaments
+# Prusa MMU2S Modification for 12 Filaments
 ## Overview
 This is the result of several months of designing and testing new ideas for increasing the filament count of the Prusa MMU2S. I tried several variations, but ended up coming back to something that is largely based on the original Prusa model. Some of the major adjustments include:
 * increase filament count from 5 to 12
