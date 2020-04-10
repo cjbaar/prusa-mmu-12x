@@ -6,22 +6,22 @@ This is the result of several months of designing and testing new ideas for incr
 * moved FINDA to the rear of the selector, in an attempt to minimize issues where the filament clears the ball but then still fails to fully retract
 * selector has integrated threads for PTFE quick-connect
 * moved control board beneath the body (inspiration thanks to [univeraljoint](https://www.thingiverse.com/universaljoint/about))
-* new bracket mounting options
-* optional integrated OLED display for more detailed information and enhanced error recovery
+* additional bracket mounting options
+* optional integrated OLED display for more detailed state information and enhanced error recovery
 ## The Disclaimer
 These items and related code are provided as-is, with no warranty -- express or implied -- and I cannot personally guarantee that it will function and/or not break your printer.
 
 That being said, I have had a great deal of luck using this model, or I wouldn't be sharing it.
 ## Software & Firmware
-In order to use this model of the MMU, you will need to use the following firmware for the MMU board. This has been branched from version 1.0.6, but has so many significant changes that I will not be attempting to submit a pull request.
+In order to use this model of the MMU, you will need to use the following modified firmware for the MMU board. This has been branched from version 1.0.6, but has numerous significant changes, so whether or not I will keep this up-to-date with future version is questionable.
 https://github.com/cjbaar/MM-control-01
 
-In addition, you will need to change the firmware on the printer itself, because the existing code will ignore any tool changes above T4. I have submitted a pull request to correct this in the base, but it is unlikely to be merged anytime soon.
+In addition, you will need to change the firmware on the printer itself, because the existing code will ignore any tool changes above T4. This is branched from version 3.9.0-RC1. I have submitted a pull request to correct this in the base, but it is unlikely to be merged anytime soon. However, these overal modifications are much smaller, and could be re-integrated in future releases with minor effort.
 https://github.com/cjbaar/Prusa-Firmware
 
-Finally, you will need to create a new printer model in Prusa Slicer that is setup for 12 filaments. I had no issues doing this in version 2.1.0+.
+Finally, in order to create the gcode files, you will need to create a new printer model in a MMU-aware slicer that is setup for 12 filaments. I had no issues doing this in PrusaSlicer version 2.1.0+.
 
-## Parts
+## Hardware
 ### Printed Parts
 Print one of each included STL file, with the following exceptions:
 * choose either m6 or m10 thread for selector
