@@ -92,3 +92,15 @@ The following pieces are required for assembly. Items in italics may not be incl
 * *(1x) m3x8mm screw*
 * (1x) m3 square nut
 * *(4x) 200mm F/F jumper wires*
+
+# Images
+<img src="./img/front.jpeg" width="640" />
+<img src="./img/inlet.jpeg" width="640" />
+<img src="./img/idler.jpeg" width="640" />
+<img src="./img/top.jpeg" width="640" />
+<img src="./img/change.jpeg" width="640" />
+
+# Output
+A successful 12-color print
+<img src="./img/peach.jpeg" width="640" />
+
