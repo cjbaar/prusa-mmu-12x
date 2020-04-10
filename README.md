@@ -1,5 +1,5 @@
 # Prusa MMU2S Modification for 12 Filaments
-<img src="./img/loaded.jpeg" width="640" align="middle" />
+<img src="./img/loaded.jpeg" width="640" style="text-align:center; />
 
 ## Overview
 This is the result of several months of designing and testing new ideas for increasing the filament count of the Prusa MMU2S. I tried several variations, but ended up coming back to something that is largely based on the original Prusa model. Some of the major adjustments include:
