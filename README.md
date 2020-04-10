@@ -10,8 +10,9 @@ This is the result of several months of designing and testing new ideas for incr
 * moved control board beneath the body (inspiration thanks to [univeraljoint](https://www.thingiverse.com/universaljoint/about))
 * additional bracket mounting options
 * optional integrated OLED display for more detailed state information and enhanced error recovery
+* code related to cutting filament has been removed, mostly in order to save program space for the display
 ## The Disclaimer
-These items and related code are provided as-is, with no warranty -- express or implied -- and I cannot personally guarantee that it will function and/or not break your printer.
+These items and related code are provided as-is, with no warranty -- express or implied -- and I cannot personally guarantee that it will function and/or not break your printer. Nothing here, of course, is officially endorsed or supported by Prusa.
 
 That being said, I have had a great deal of luck using this model, or I wouldn't be sharing it.
 ## Software & Firmware
