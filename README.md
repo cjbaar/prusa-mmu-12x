@@ -30,7 +30,7 @@ Print one of each included STL file, with the following exceptions:
 * screen is optional, if using OLED display
 * wrench is optional, but assists with assembling the inlet manifold
 
-I printed all parts with relatively slow speed and 0.2mm layers. I also printed most everything with PLA -- in particular, the inlet and selector -- because I get better consistency and tolerances for bearings and filament paths. In my experience, printing in PETG may make some fittings tighter.
+I printed all parts with relatively slow speed and 0.2mm layers. I also printed most everything with PLA -- in particular, the selector and idler rings -- because I get better consistency and tolerances for bearings and general fit. In my experience, printing the same model in PETG may make some pieces harder to fit together.
 
 For the lower and selector prints, there are related mod files, which I recommended printing with 100% infill.
 
