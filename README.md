@@ -11,10 +11,12 @@ This is the result of several months of designing and testing new ideas for incr
 * additional bracket mounting options
 * optional integrated OLED display for more detailed state information and enhanced error recovery
 * code related to cutting filament has been removed, mostly in order to save program space for the display
+
 ## The Disclaimer
 These items and related code are provided as-is, with no warranty -- express or implied -- and I cannot personally guarantee that it will function and/or not break your printer. Nothing here, of course, is officially endorsed or supported by Prusa.
 
 That being said, I have had a great deal of luck using this model, or I wouldn't be sharing it.
+
 ## Software & Firmware
 In order to use this model of the MMU, you will need to use the following modified firmware for the MMU board. This has been branched from version 1.0.6, but has numerous significant changes, so whether or not I will keep this up-to-date with future version is questionable.
 https://github.com/cjbaar/MM-control-01
