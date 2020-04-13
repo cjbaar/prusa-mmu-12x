@@ -6,6 +6,7 @@ This is the result of several months of designing and testing new ideas for incr
 * increased filament count from 5 to 12
 * reversed position of pulley and idler motors, to maximize the use of the 110mm pulley shaft
 * moved FINDA to the rear of the selector, in an attempt to minimize issues where the filament clears the ball but then still fails to fully retract
+* added quick-release for FINDA sensor, for ability to clean or check ball chamber without re-calibration of FINDA height
 * selector has integrated threads for PTFE quick-connect
 * moved control board beneath the body (inspiration thanks to [univeraljoint](https://www.thingiverse.com/universaljoint/about))
 * additional bracket mounting options
@@ -31,7 +32,7 @@ Finally, in order to create the gcode files, you will need to create a new print
 ## Hardware
 ### Printed Parts
 Print one of each included STL file, with the following exceptions:
-* choose either m6 or m10 thread for selector
+* choose either m6 or m10 thread for selector base
 * choose bracket type (traditional frame mount or table-top)
 * print four copies of idler-rings.stl
 * screen is optional, if using OLED display
@@ -39,7 +40,7 @@ Print one of each included STL file, with the following exceptions:
 
 I printed all parts with relatively slow speed and 0.2mm layers. I also printed most everything with PLA -- in particular, the selector and idler rings -- because I get better consistency and tolerances for bearings and general fit. In my experience, printing the same model in PETG may make some pieces harder to fit together.
 
-For the lower and selector prints, there are related mod files, which I recommended printing with 100% infill.
+For the "lower" model, there is a related mod file, which I recommended printing with 100% infill. The selector cap might also need to be 100% infill.
 
 ### Additional Parts
 The following pieces are required for assembly. Items in italics may not be included in the original Prusa MMU2, but should be easily found on Amazon (or your world domination retailer of choice).
@@ -103,6 +104,8 @@ The following pieces are required for assembly. Items in italics may not be incl
 <img src="./img/inlet.jpeg" width="640" />
 <img src="./img/idler.jpeg" width="640" />
 <img src="./img/top.jpeg" width="640" />
+<img src="./img/finda.jpeg" width="640" />
+<img src="./img/stats.jpeg" width="640" />
 <img src="./img/change.jpeg" width="640" />
 
 ## Output
