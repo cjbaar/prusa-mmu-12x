@@ -44,6 +44,7 @@ For the "lower" model, there is a related mod file, which I recommended printing
 
 ### Additional Parts
 The following pieces are required for assembly. Items in italics may not be included in the original Prusa MMU2, but should be easily found on Amazon (or your world domination retailer of choice).
+
 #### Lower
 * (1x) Prusa MMU "Extruder" motor (std d-shaft)
 * (1x) Prusa MMU "Pulley" motor (110mm d-shaft)
@@ -81,13 +82,14 @@ The following pieces are required for assembly. Items in italics may not be incl
 * *(12x) m10 PTFE quick-fit connector*
 
 #### Selector
-* *(1x) m3x8mm screw*
+* *(2x) m3x8mm screw*
 * *(2x) m3x16mm screw*
-* (1x) m3 square nut
+* (2x) m3 square nut
 * (2x) m3 hex nut
 * (1x) T8 plastic lead screw nut
 * *(1x) m10 OR m6 PTFE quick-fit connector*
 * (2x) 5mm brass sleeve, cut to 20mm length
+* (1x) FINDA sensor
 
 #### Brackets
 * *(2x) m3x8mm screw*
