@@ -110,8 +110,12 @@ The following pieces are required for assembly. Items in italics may not be incl
 <img src="./img/stats.jpeg" width="640" />
 <img src="./img/change.jpeg" width="640" />
 
+## Testing
+Full setup with spool rewinders from [VincentGroenhuis](https://www.thingiverse.com/thing:3781815/files)
+
+<img src="./img/setup.jpeg" />
+
 ## Output
 A successful 12-color print
 
 <img src="./img/peach.jpeg" />
-
