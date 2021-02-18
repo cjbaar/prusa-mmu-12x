@@ -33,7 +33,7 @@ Finally, in order to create the gcode files, you will need to create a new print
 ### Printed Parts
 Print one of each included STL file, with the following exceptions:
 * choose either m6 or m10 thread for selector base
-	* or original m5 heat-set remix, thanks to [obe](https://www.thingiverse.com/obe/designs)
+	* or original m5 heat-set remix, thanks to [obe](./remix/obe)
 * choose bracket type (traditional frame mount or table-top)
 * print four copies of idler-rings.stl
 * screen is optional, if using OLED display
