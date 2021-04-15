@@ -58,10 +58,11 @@ I2C interface.)
 
 Note the order of the colors, here; they are not the same on both sides. 
 In case you have a different display, the actual pin connections should be as shown below.
-Pin "1" on the control board is the one closest to the power connection.
+Pin "1" on the control board is the one closest to the power connection. The colors listed
+below are only in reference to the wires I used in the two photos above.
 ```
-  1 <-> VCC (+5v)
-  2 <-> GND
-  3 <-> SCL
-  4 <-> SDA
+  1 <-> VCC (yellow)
+  2 <-> GND (orange)
+  3 <-> SCL (green)
+  4 <-> SDA (blue)
 ```
