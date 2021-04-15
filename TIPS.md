@@ -5,7 +5,7 @@ build instructions. Being a pet project, I don't have any official documentation
 the files provided assume that you have previously built the stock Prusa MMU, and are probably
 re-using many of the parts. Below are some of the major differences from the stock model.
 
-### Pulley
+## Pulley
 
 The pulley motor is moved to the left, to make full use of its length. Install a 625Z bearing
 on each side of the pulley chamber, and start feeding the motor shaft in from the left of the
@@ -15,7 +15,7 @@ space between the edge of a gear and its grub screw.
 
 <img src="./img/pulley-align.jpeg" width="640" />
 
-### Idler
+## Idler
 
 This is the most major change, as the idler has to be assembled from many pieces. Start with
 the "top" (tall piece from idler-ends.stl), and add the rings in groups of three. Each ring
@@ -55,7 +55,7 @@ during a print. This (terrible) photo shows filament #1 "engaged."
 
 <img src="./img/idler1.jpeg" width="640" />
 
-### Display
+## Display
 
 For the optional SSD1306 display, make sure you have a model that is set to use I2C communication.
 Attach four wires from the display to the unused port on the control board, which
