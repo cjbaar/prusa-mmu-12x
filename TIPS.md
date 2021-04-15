@@ -12,6 +12,7 @@ on each side of the pulley chamber, and start feeding the motor shaft in from th
 unit. As you go, install the seven 40T gears. As shown here, try to align the gears so that no
 filament will end up on a grub screw. The even-numbered filaments will end up in the very narrow
 space between the edge of a gear and its grub screw.
+
 <img src="./img/pulley-align.jpeg" width="640" />
 
 ### Idler
@@ -22,6 +23,7 @@ has a printed number (1,2,3) on the bottom, so install in order, and make sure t
 line up. Place hex nuts in the end piece, and in each "#3" piece, and then after each set
 install the M3 screw. These screws are probably optional, but I use them to help keep the
 alignment tight.
+
 <img src="./img/idler-assembly.jpeg" width="640" />
 
 Install the two 24T gears into the top; these secure the idler assembly to the motor spindle.
@@ -29,16 +31,19 @@ Align the grub screws with the holes, and open them to allow room for the motor 
 Slide the "top" end onto the motor spindle, aligning the flat side of the spindle with one pair
 of grub screws. Tighten the screws on the flat side slightly to keep alignment, but do not 
 tighten fully yet.
+
 <img src="./img/idler-24t.jpeg" width="640" />
 
 Finish the assembly with the small cap from idler-ends.stl. The cap fits into a 608RS bearing,
 which in turn fits into idler-mount.stl.
+
 <img src="./img/idler-full.jpeg" width="640" />
 
 At this point, install the assembly into the upper piece, using m3 screws to mount the motor
 and the idler-end (hex nuts are required in the idler-end). Once the ends are secured, tighten
 the grub screws, while keeping the assembly pushed as far to the right as it will go (up against
 the bearing). This should provide proper alignment with the filament slots.
+
 <img src="./img/idler.jpeg" width="640" />
 
 ### Display
@@ -47,6 +52,7 @@ For the optional SSD1306 display, make sure you have a model that is set to use 
 Attach four wires, as shown, to the display and the unused port on the control board, which
 should be labeled as "SENSOR." (In reality, this port is just an unused-but-conveniently-exposed
 I2C interface.)
+
 <img src="./img/display1.jpeg" width="640" />
 <img src="./img/display2.jpeg" width="640" />
 
