@@ -49,14 +49,16 @@ the bearing). This should provide proper alignment with the filament slots.
 ### Display
 
 For the optional SSD1306 display, make sure you have a model that is set to use I2C communication.
-Attach four wires, as shown, to the display and the unused port on the control board, which
+Attach four wires from the display to the unused port on the control board, which
 should be labeled as "SENSOR." (In reality, this port is just an unused-but-conveniently-exposed
 I2C interface.)
 
 <img src="./img/display1.jpeg" width="640" />
 <img src="./img/display2.jpeg" width="640" />
 
-In case you have a different display, the actual pin connections should be as follows.
+Note the order of the colors, here; they are not the same on both sides. 
+In case you have a different display, the actual pin connections should be as shown below.
+Pin "1" on the control board is the one closest to the power connection.
 ```
   1 <-> VCC (+5v)
   2 <-> GND
