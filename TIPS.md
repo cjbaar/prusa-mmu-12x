@@ -46,6 +46,13 @@ the bearing). This should provide proper alignment with the filament slots.
 
 <img src="./img/idler.jpeg" width="640" />
 
+One last note on the idler design. The holes on each ring, opposite where the bearing fits,
+was originally there to add a m2 screw on each ring. I stopped doing this when I added the 
+internal m3 screws, but I did a long slot opening on the upper body. When a given filament
+is "engaged," the hole on the ring should line up perfectly centered in the slot next to its
+corresponding number. This helps to know if the idler has become out of expected alignment
+during a print.
+
 ### Display
 
 For the optional SSD1306 display, make sure you have a model that is set to use I2C communication.
