@@ -51,7 +51,7 @@ was originally there to add a m2 screw on each ring. I stopped doing this when I
 internal m3 screws, but I did a long slot opening on the upper body. When a given filament
 is "engaged," the hole on the ring should line up perfectly centered in the slot next to its
 corresponding number. This helps to know if the idler has become out of expected alignment
-during a print. This photo shows filament #1 "engaged."
+during a print. This (terrible) photo shows filament #1 "engaged."
 
 <img src="./img/idler1.jpeg" width="640" />
 
