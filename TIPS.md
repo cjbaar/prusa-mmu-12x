@@ -41,7 +41,7 @@ which in turn fits into idler-mount.stl.
 
 At this point, install the assembly into the upper piece, using m3 screws to mount the motor
 and the idler-end (hex nuts are required in the idler-end). Once the ends are secured, tighten
-the grub screws, while keeping the assembly pushed as far to the right as it will go (up against
+the grub screws, while keeping the assembly pushed as far to the left as it will go (up against
 the bearing). This should provide proper alignment with the filament slots.
 
 <img src="./img/idler.jpeg" width="640" />
