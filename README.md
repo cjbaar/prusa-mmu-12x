@@ -23,9 +23,9 @@ In order to use this model of the MMU, you will need to use the following modifi
 
 https://github.com/cjbaar/MM-control-01
 
-In addition, you will need to change the firmware on the printer itself, because the existing code will ignore any tool changes above T4. This is branched from version 3.9.0-RC1. I have submitted a pull request to correct this in the base, but it is unlikely to be merged anytime soon. However, these overal modifications are much smaller, and could be re-integrated in future releases with minor effort.
+In addition, you will need to change the firmware on the printer itself, because the existing code will ignore any tool changes above T4. This is now based on branch 3.11.0. There is a compiled version for the MK3S in the firmware folder of this repo.
 
-https://github.com/cjbaar/Prusa-Firmware
+https://github.com/cjbaar/Prusa-Firmware/tree/MK3_3.11.0
 
 Finally, in order to create the gcode files, you will need to create a new printer model in a MMU-aware slicer that is setup for 12 filaments. I had no issues doing this in PrusaSlicer version 2.1.0+.
 
