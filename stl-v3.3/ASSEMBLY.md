@@ -13,7 +13,7 @@ unit. As you go, install the seven 40T gears. As shown here, try to align the ge
 filament will end up on a grub screw. The even-numbered filaments will end up in the very narrow
 space between the edge of a gear and its grub screw.
 
-<img src="./img/pulley-align.jpeg" width="640" />
+<img src="../img/pulley-align.jpeg" width="640" />
 
 ## Inlet
 
@@ -22,7 +22,7 @@ the ones from the buffer/roller kits as well (I don't use them). If you don't ha
 or you prefer the M10 screw PTFE locks, you can print the old inlet from the v1.4 folder.
 Both models fit in the lower frame the same, and can be held with a couple of M2 screws.
 
-<img src="./img/inlet-3.jpeg" width="640" />
+<img src="../img/inlet-3.jpeg" width="640" />
 
 ## Idler
 
@@ -34,12 +34,12 @@ install the M3 screw. These screws are probably optional, but I use them to help
 alignment snug. Do not tighten the screws past the point where they are seated, or it could
 compress the overall size of the idler.
 
-<img src="./img/idler-assembly.jpeg" width="640" />
+<img src="../img/idler-assembly.jpeg" width="640" />
 
 Before installing the top end, make sure to inset 4x M3 hex nuts. These will hold the metal
 motor mount (included with the Prusa MMU3 kit).
 
-<img src="./img/idler-assembled-3.jpeg" width="640" />
+<img src="../img/idler-assembled-3.jpeg" width="640" />
 
 Finish the lower end of the assembly with the small cap from idler-ends.stl.
 The cap fits into a 608RS bearing, which in turn fits into the upper frame.
@@ -48,14 +48,14 @@ Tighten the grub screws, while keeping the assembly pushed as far to the left as
 will go (up against the bearing).
 This should provide proper alignment with the filament slots.
 
-<img src="./img/idler-3.jpeg" width="640" />
+<img src="../img/idler-3.jpeg" width="640" />
 
 Print either the single or two-color model for the faceplate (upper-panel.stl/upper-color.stl).
 Install the panel with two square nuts and 6mm screws.
 Once completed, the slot on each ring should align through the small window when that
 filament is engaged, or when the idler is parked at the end.
 
-<img src="./img/mmu3.jpeg" width="640" />
+<img src="../img/mmu3.jpeg" width="640" />
 
 ## Upper Latches
 
@@ -65,5 +65,5 @@ wanted access to the pulley chamber for any reason. The tension screws now go in
 latches, which can be quickly disconnected to open the idler, and snapped back into place
 to close it. All without touching the screws or your set tension!
 
-<img src="./img/upper-latched.jpeg" width="640" />
-<img src="./img/upper-unlatched.jpeg" width="640" />
+<img src="../img/upper-latched.jpeg" width="640" />
+<img src="../img/upper-unlatched.jpeg" width="640" />
