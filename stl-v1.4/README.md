@@ -1,77 +1,122 @@
-# Assembly Tips
+# Prusa MMU2S Modification for 12 Filaments
+<img src="../img/loaded.jpeg" width="640" />
 
-As this project has started to gain popularity, several people have asked for more detailed
-build instructions. Being a pet project, I don't have any official documentation. In general,
-the files provided assume that you have previously built the stock Prusa MMU, and are probably
-re-using many of the parts. Below are some of the major differences from the stock model.
+## Overview
+This is the result of several months of designing and testing new ideas for increasing the filament count of the Prusa MMU2S. I tried several variations, but ended up coming back to something that is largely based on the original Prusa model. Some of the major adjustments include:
+* increased filament count from 5 to 12
+* reversed position of pulley and idler motors, to maximize the use of the 110mm pulley shaft
+* moved FINDA to the rear of the selector, in an attempt to minimize issues where the filament clears the ball but then still fails to fully retract
+* added quick-release for FINDA sensor, for ability to clean or check ball chamber without re-calibration of FINDA height
+* selector has integrated threads for PTFE quick-connect
+* moved control board beneath the body (inspiration thanks to [univeraljoint](https://www.thingiverse.com/universaljoint/about))
+* additional bracket mounting options
+* optional integrated OLED display for more detailed state information and enhanced error recovery
+* selector does not include the cutter
 
-## Pulley
+## The Disclaimer
+These items and related code are provided as-is, with no warranty -- express or implied -- and I cannot personally guarantee that it will function and/or not break your printer. Nothing here, of course, is officially endorsed or supported by Prusa.
 
-The pulley motor is moved to the left, to make full use of its length. Install a 625Z bearing
-on each side of the pulley chamber, and start feeding the motor shaft in from the left of the
-unit. As you go, install the seven 40T gears. As shown here, try to align the gears so that no
-filament will end up on a grub screw. The even-numbered filaments will end up in the very narrow
-space between the edge of a gear and its grub screw.
+That being said, I have had a great deal of luck using this model, or I wouldn't be sharing it.
 
-<img src="../img/pulley-align.jpeg" width="640" />
+## Software & Firmware
+In order to use this model of the MMU, you will need to use the following modified firmware for the MMU board. This has been branched from version 1.0.6, but has numerous significant changes, so whether or not I will keep this up-to-date with future version is questionable.
 
-## Idler
+https://github.com/cjbaar/MM-control-01
 
-This is the most major change, as the idler has to be assembled from many pieces. Start with
-the "top" (tall piece from idler-ends.stl), and add the rings in groups of three. Each ring
-has a printed number (1,2,3) on the bottom, so install in order, and make sure the screw holes
-line up. Place hex nuts in the end piece, and in each "#3" piece, and then after each set
-install the M3 screw. These screws are probably optional, but I use them to help keep the
-alignment tight.
+In addition, you will need to change the firmware on the printer itself, because the existing code will ignore any tool changes above T4. This is now based on branch 3.11.0. There is a compiled version for the MK3S in the firmware folder of this repo.
 
-<img src="../img/idler-assembly-3.jpeg" width="640" />
+https://github.com/cjbaar/Prusa-Firmware/tree/MK3_3.11.0
 
-Install the two 24T gears into the top; these secure the idler assembly to the motor spindle.
-Align the grub screws with the holes, and open them to allow room for the motor spindle.
-Slide the "top" end onto the motor spindle, aligning the flat side of the spindle with one pair
-of grub screws. Tighten the screws on the flat side slightly to keep alignment, but do not 
-tighten fully yet.
+Finally, in order to create the gcode files, you will need to create a new printer model in a MMU-aware slicer that is setup for 12 filaments. I had no issues doing this in PrusaSlicer version 2.1.0+.
 
-<img src="../img/idler-24t.jpeg" width="640" />
+## Hardware
+### Printed Parts
+Print one of each included STL file, with the following exceptions:
+* choose either m6 or m10 thread for selector base
+	* or original m5 heat-set remix, thanks to [obe](./remixes/obe)
+* choose bracket type (traditional frame mount or table-top)
+* print four copies of idler-rings.stl
+* screen is optional, if using OLED display
+* wrench is optional, but assists with assembling the inlet manifold
 
-Finish the assembly with the small cap from idler-ends.stl. The cap fits into a 608RS bearing,
-which in turn fits into idler-mount.stl.
+I printed all parts with relatively slow speed and 0.2mm layers. I also printed most everything with PLA -- in particular, the selector and idler rings -- because I get better consistency and tolerances for bearings and general fit. In my experience, printing the same model in PETG may make some pieces harder to fit together.
 
-<img src="../img/idler-full.jpeg" width="640" />
+For the "lower" model, there is a related mod file, which I recommended printing with 100% infill. The selector cap might also need to be 100% infill.
 
-At this point, install the assembly into the upper piece, using m3 screws to mount the motor
-and the idler-end (hex nuts are required in the idler-end). Once the ends are secured, tighten
-the grub screws, while keeping the assembly pushed as far to the left as it will go (up against
-the bearing). This should provide proper alignment with the filament slots.
+### Additional Parts
+The following pieces are required for assembly. Items in italics may not be included in the original Prusa MMU2, but should be easily found on Amazon (or your world domination retailer of choice).
 
+#### Lower
+* (1x) Prusa MMU "Extruder" motor (std d-shaft)
+* (1x) Prusa MMU "Pulley" motor (110mm d-shaft)
+* (1x) Prusa MMU "Selector" motor (120mmx8mm lead screw)
+* (12x) m3x10mm screw
+* (6x) m3 square nut
+* (4x) 625Z bearing
+* (2x) 5mmx120mm steel rod
+* *(7x) 12mmx12mmx5mm drive gear (40T)*
+
+#### Upper
+* (4x) m3x10mm screw
+* *(2x) m3x12mm screw*
+* *(2x) m5x16mm screw*
+* (2x) m3x30mm screw
+* (2x) m5x15mm spring
+
+#### Idler
+* *(6x) m3x20mm screw*
+* *(2x) m3x25mm screw*
+* (10x) m3 hex nut
+* *(1x) 608RS bearing*
+* *(12x) 4x13x4mm u-shaped bearing*
+* *(1x) 5mmx100mm steel rod*
+* *(2x) 11mmx11mmx5mm Mk8 brass drive gear (26T)*
+
+#### Microcontoller Unit (MCU)
+* *(4x) m3x14mm screw*
+* *(3X) m3x12mm screw*
+* (3x) m3 hex nut
+
+#### Inlet
+* *(6x) m2x16mm screw*
+* *(6x) m2 hex nut*
+* *(12x) m10 PTFE quick-fit connector*
+
+#### Selector
+* *(2x) m3x8mm screw*
+* *(2x) m3x16mm screw*
+* (2x) m3 square nut
+* (2x) m3 hex nut
+* (1x) T8 plastic lead screw nut
+* *(1x) m10 OR m6 PTFE quick-fit connector*
+* (2x) 5mm brass sleeve, cut to 20mm length
+* (1x) FINDA sensor
+
+#### Brackets
+* *(2x) m3x8mm screw*
+
+#### Display (optional)
+* *(1x) OLED SSD1306 display, I2C, 128x64*
+* *(4x) m2x8mm screw*
+* *(1x) m3x8mm screw*
+* (1x) m3 square nut
+* *(4x) 200mm F/F jumper wires*
+
+## Images
+<img src="../img/front.jpeg" width="640" />
+<img src="../img/inlet.jpeg" width="640" />
 <img src="../img/idler.jpeg" width="640" />
+<img src="../img/top.jpeg" width="640" />
+<img src="../img/finda.jpeg" width="640" />
+<img src="../img/stats.jpeg" width="640" />
+<img src="../img/change.jpeg" width="640" />
 
-One last note on the idler design. The holes on each ring, opposite where the bearing fits,
-was originally there to add a m2 screw on each ring. I stopped doing this when I added the 
-internal m3 screws, but I did a long slot opening on the upper body. When a given filament
-is "engaged," the hole on the ring should line up perfectly centered in the slot next to its
-corresponding number. This helps to know if the idler has become out of expected alignment
-during a print. This (terrible) photo shows filament #1 "engaged."
+## Testing
+Full setup with spool rewinders from [VincentGroenhuis](https://www.thingiverse.com/thing:3781815/files)
 
-<img src="../img/idler1.jpeg" width="640" />
+<img src="../img/setup.jpeg" />
 
-## Display
+## Output
+A successful 12-color print
 
-For the optional SSD1306 display, make sure you have a model that is set to use I2C communication.
-Attach four wires from the display to the unused port on the control board, which
-should be labeled as "SENSOR." (In reality, this port is just an unused-but-conveniently-exposed
-I2C interface.)
-
-<img src="../img/display1.jpeg" width="640" />
-<img src="../img/display2.jpeg" width="640" />
-
-Note the order of the colors, here; they are not the same on both sides. 
-In case you have a different display, the actual pin connections should be as shown below.
-Pin "1" on the control board is the one closest to the power connection. The colors listed
-below are only in reference to the wires I used in the two photos above.
-```
-  1 <-> VCC (yellow)
-  2 <-> GND (orange)
-  3 <-> SCL (green)
-  4 <-> SDA (blue)
-```
+<img src="../img/peach.jpeg" />
