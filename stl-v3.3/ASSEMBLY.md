@@ -34,7 +34,7 @@ install the M3 screw. These screws are probably optional, but I use them to help
 alignment snug. Do not tighten the screws past the point where they are seated, or it could
 compress the overall size of the idler.
 
-<img src="../img/idler-assembly.jpeg" width="640" />
+<img src="../img/idler-assembly-3.jpeg" width="640" />
 
 Before installing the top end, make sure to inset 4x M3 hex nuts. These will hold the metal
 motor mount (included with the Prusa MMU3 kit).

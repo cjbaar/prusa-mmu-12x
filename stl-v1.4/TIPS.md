@@ -24,7 +24,7 @@ line up. Place hex nuts in the end piece, and in each "#3" piece, and then after
 install the M3 screw. These screws are probably optional, but I use them to help keep the
 alignment tight.
 
-<img src="../img/idler-assembly.jpeg" width="640" />
+<img src="../img/idler-assembly-3.jpeg" width="640" />
 
 Install the two 24T gears into the top; these secure the idler assembly to the motor spindle.
 Align the grub screws with the holes, and open them to allow room for the motor spindle.
