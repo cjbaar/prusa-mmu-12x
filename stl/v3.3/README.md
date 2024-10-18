@@ -57,13 +57,13 @@ filament is engaged, or when the idler is parked at the end.
 
 <img src="../img/mmu3.jpeg" width="640" />
 
-## Upper Latches
+## Power Board
 
-A new feature for this version is the splitting of the upper frame from the tension screws.
-I was tired of unscrewing and re-tensioning these whenever a failure occur, or I just
-wanted access to the pulley chamber for any reason. The tension screws now go into the
-latches, which can be quickly disconnected to open the idler, and snapped back into place
-to close it. All without touching the screws or your set tension!
+Prusa has solved the previous MMU power issues by providing a new power board. On the
+stock model, this hangs off the back of the idler. Since this model mounts the MCU
+under the main body, my solution is just to bend the right-angle headers back to
+straight. There is a printed cover to add-on once the board is installed.
 
-<img src="../img/upper-latched.jpeg" width="640" />
-<img src="../img/upper-unlatched.jpeg" width="640" />
+<img src="../img/power-board.jpeg" width="640" />
+<img src="../img/power-installed.jpeg" width="640" />
+<img src="../img/power-covered.jpeg" width="640" />
