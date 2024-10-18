@@ -3,7 +3,9 @@
 
 ## Overview
 
-This is the result of several months of designing and testing new ideas for increasing the filament count of the Prusa MMU2S. I tried several variations, but ended up coming back to something that is largely based on the original Prusa model. Some of the major adjustments include:
+This is the result of several months of designing and testing new ideas for increasing the filament count of the Prusa MMU2S. (And then more testing and re-designs for the MMU3.)
+I tried several variations, but ended up coming back to something that is largely based
+on the original Prusa model. Some of the major adjustments include:
 * increased filament count from 5 to 12
 * reversed position of pulley and idler motors, to maximize the use of the 110mm pulley shaft
 * moved FINDA to the rear of the selector, in an attempt to minimize issues where the filament clears the ball but then still fails to fully retract
