@@ -163,6 +163,6 @@ Full setup with spool rewinders from [VincentGroenhuis](https://www.thingiverse.
 <img src="./img/setup-3.jpeg" />
 
 ## Output
-A successful 12-color print. 440 total tool changes .... 
+A successful 12-color print.
 
-<img src="./img/output-3.jpeg" />
+<img src="./img/rings-mk4.jpeg" />
