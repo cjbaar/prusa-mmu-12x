@@ -92,7 +92,7 @@ static constexpr U_mm findaToCoupler = 25.0_mm; /// FINDA Coupler side to couple
 static constexpr U_mm couplerToBowden = 3.5_mm; /// FINDA Coupler screw to bowden mmu side (in coupling).
 
 // Min, max and default bowden length setup
-static constexpr U_mm defaultBowdenLength = 515.0_mm; /// ~360.0_mm - Default Bowden length.
+static constexpr U_mm defaultBowdenLength = 360.0_mm; /// ~360.0_mm - Default Bowden length.
 static constexpr U_mm minimumBowdenLength = 341.0_mm; /// ~341.0_mm - Minimum bowden length.
 static constexpr U_mm maximumBowdenLength = 1000.0_mm; /// ~1000.0_mm - Maximum bowden length.
 static_assert(minimumBowdenLength.v <= defaultBowdenLength.v);
@@ -210,7 +210,7 @@ static constexpr IdlerLimits idlerLimits = {
     .accel = 500.0_deg_s2,
 };
 
-static constexpr U_deg IdlerSlotDistance = 25.2_deg; /// Idler distance between two slots
+static constexpr U_deg IdlerSlotDistance = 25.4_deg; /// Idler distance between two slots
 static constexpr U_deg IdlerOffsetFromHome = 10.5_deg; /// Idler offset from home to slots
 static constexpr U_deg IdlerOffsetToPark = -2.5_deg;
 
