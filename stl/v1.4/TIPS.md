@@ -13,7 +13,7 @@ unit. As you go, install the seven 40T gears. As shown here, try to align the ge
 filament will end up on a grub screw. The even-numbered filaments will end up in the very narrow
 space between the edge of a gear and its grub screw.
 
-<img src="../img/pulley-align.jpeg" width="640" />
+<img src="../../img/pulley-align.jpeg" width="640" />
 
 ## Idler
 
@@ -24,7 +24,7 @@ line up. Place hex nuts in the end piece, and in each "#3" piece, and then after
 install the M3 screw. These screws are probably optional, but I use them to help keep the
 alignment tight.
 
-<img src="../img/idler-assembly-3.jpeg" width="640" />
+<img src="../../img/idler-assembly-3.jpeg" width="640" />
 
 Install the two 24T gears into the top; these secure the idler assembly to the motor spindle.
 Align the grub screws with the holes, and open them to allow room for the motor spindle.
@@ -32,19 +32,19 @@ Slide the "top" end onto the motor spindle, aligning the flat side of the spindl
 of grub screws. Tighten the screws on the flat side slightly to keep alignment, but do not 
 tighten fully yet.
 
-<img src="../img/idler-24t.jpeg" width="640" />
+<img src="../../img/idler-24t.jpeg" width="640" />
 
 Finish the assembly with the small cap from idler-ends.stl. The cap fits into a 608RS bearing,
 which in turn fits into idler-mount.stl.
 
-<img src="../img/idler-full.jpeg" width="640" />
+<img src="../../img/idler-full.jpeg" width="640" />
 
 At this point, install the assembly into the upper piece, using m3 screws to mount the motor
 and the idler-end (hex nuts are required in the idler-end). Once the ends are secured, tighten
 the grub screws, while keeping the assembly pushed as far to the left as it will go (up against
 the bearing). This should provide proper alignment with the filament slots.
 
-<img src="../img/idler.jpeg" width="640" />
+<img src="../../img/idler.jpeg" width="640" />
 
 One last note on the idler design. The holes on each ring, opposite where the bearing fits,
 was originally there to add a m2 screw on each ring. I stopped doing this when I added the 
@@ -53,7 +53,7 @@ is "engaged," the hole on the ring should line up perfectly centered in the slot
 corresponding number. This helps to know if the idler has become out of expected alignment
 during a print. This (terrible) photo shows filament #1 "engaged."
 
-<img src="../img/idler1.jpeg" width="640" />
+<img src="../../img/idler1.jpeg" width="640" />
 
 ## Display
 
@@ -62,8 +62,8 @@ Attach four wires from the display to the unused port on the control board, whic
 should be labeled as "SENSOR." (In reality, this port is just an unused-but-conveniently-exposed
 I2C interface.)
 
-<img src="../img/display1.jpeg" width="640" />
-<img src="../img/display2.jpeg" width="640" />
+<img src="../../img/display1.jpeg" width="640" />
+<img src="../../img/display2.jpeg" width="640" />
 
 Note the order of the colors, here; they are not the same on both sides. 
 In case you have a different display, the actual pin connections should be as shown below.

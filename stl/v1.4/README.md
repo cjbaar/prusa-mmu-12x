@@ -1,5 +1,5 @@
 # Prusa MMU2S Modification for 12 Filaments
-<img src="../img/loaded.jpeg" width="640" />
+<img src="../../img/loaded.jpeg" width="640" />
 
 ## Overview
 This is the result of several months of designing and testing new ideas for increasing the filament count of the Prusa MMU2S. I tried several variations, but ended up coming back to something that is largely based on the original Prusa model. Some of the major adjustments include:
@@ -103,20 +103,20 @@ The following pieces are required for assembly. Items in italics may not be incl
 * *(4x) 200mm F/F jumper wires*
 
 ## Images
-<img src="../img/front.jpeg" width="640" />
-<img src="../img/inlet.jpeg" width="640" />
-<img src="../img/idler.jpeg" width="640" />
-<img src="../img/top.jpeg" width="640" />
-<img src="../img/finda.jpeg" width="640" />
-<img src="../img/stats.jpeg" width="640" />
-<img src="../img/change.jpeg" width="640" />
+<img src="../../img/front.jpeg" width="640" />
+<img src="../../img/inlet.jpeg" width="640" />
+<img src="../../img/idler.jpeg" width="640" />
+<img src="../../img/top.jpeg" width="640" />
+<img src="../../img/finda.jpeg" width="640" />
+<img src="../../img/stats.jpeg" width="640" />
+<img src="../../img/change.jpeg" width="640" />
 
 ## Testing
 Full setup with spool rewinders from [VincentGroenhuis](https://www.thingiverse.com/thing:3781815/files)
 
-<img src="../img/setup.jpeg" />
+<img src="../../img/setup.jpeg" />
 
 ## Output
 A successful 12-color print
 
-<img src="../img/peach.jpeg" />
+<img src="../../img/peach.jpeg" />
