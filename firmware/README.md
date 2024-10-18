@@ -1,4 +1,6 @@
-# Prusa MMU2S Modification for 12 Filaments
+# Prusa MMU Modification for 12 Filaments
 
-## DISLAIMER
-Use at your own risk. I have not tested these files, or tried loading them to the MMU.
+## DISCLAIMER
+
+Use at your own risk. I have not necessarily tested each individual file.
+If possible, use provided configs to compiles your own hex files.
