@@ -3,4 +3,4 @@
 ## DISCLAIMER
 
 Use at your own risk. I have not necessarily tested each individual file.
-If possible, use provided configs to compiles your own hex files.
+If possible, use provided configs to compile your own hex files.
