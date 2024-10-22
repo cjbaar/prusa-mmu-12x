@@ -39,10 +39,11 @@ We no longer need to use custom firmware anymore, for either the MMU board
 or the printer itself!
 
 You can use the [`config.h`](./firmware/config-mmu3-mk4-12x.h) file provided here, and do your
-own build with the [Prusa MMU Firmware](https://github.com/prusa3d/Prusa-Firmware-MMU) repo. would generally encourage you to become familiar with the build process if you want to proceed
-with this project. I will not be compiling this into every new version that Prusa release.
-However, you can download a compiled version of the current (as of now)
-3.0.3 firmware [here](./firmware/cjb_fw_mk4_mmu3_3.0.3-x12.hex).
+own build with the [Prusa MMU Firmware](https://github.com/prusa3d/Prusa-Firmware-MMU) repo. I would generally encourage you to become familiar with the build process if you want to proceed
+with this project. I will probably not be compiling this into every new version that Prusa
+releases. However, you can download a compiled version of the current (as of now)
+[3.0.3 firmware here](./firmware/cjb_fw_mk4_mmu3_3.0.3-x12.hex), or view
+[my firmware fork here](https://github.com/cjbaar/Prusa-Firmware-MMU-12x).
 
 NOTE: This version of the MMU3-12x will function exactly like the
 stock Prusa MMU3, as it is entirely their firmware with a few different distance
