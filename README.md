@@ -52,21 +52,6 @@ back to the printer screen. I personally found my interface "tweaks" easier to u
 understand, but this keeps things simpler. With the amount of work Prusa has to the
 stock code, it just doesn't make sense to try re-writing it anymore.
 
-### The Bad News
-
-With a new MMU3 kit, I had no issues compiling and uploading the firmware, using my custom
-`config.h` file. However, I was not able to make this work with my existing (MMU2S) board.
-The boards are more-or-less identical, and I don't think it is a hardware issue.
-
-I can flash
-the firmware and it starts up, but the printer does not receive communication from it. There
-are notes in the config hinting at issues with EEPROM when changing the number of filaments.
-I have also tried erasing the EEPROM, as indicated, but it still won't function.
-
-If anyone else has better luck re-using an old board, please let me know. Otherwise, for now,
-it looks like you will (unfortunately?) need to purchase an actual MMU3 kit -- or at least
-the control board -- in order to make this work.
-
 ### The Potential (Unknown) News
 
 At the moment, flashing the MMU firmware is a relatively simple process, and the current
