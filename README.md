@@ -94,7 +94,8 @@ The following pieces are required for assembly. Items in italics may not be incl
 * (4x) 625Z bearing
 * (2x) 5mmx120mm steel rod
 * *(7x) 12mmx12mmx5mm drive gear (40T)*\
-	NOTE: I have a hard time finding actual 12mm wide gears now. All the ones I have purchased lately on Amazon claim to be 12mm, but are actually only 11mm. I have not tested if these will cause issues with the filament alignment.
+	NOTE: I have a hard time finding actual 12mm wide gears now. All the ones I have purchased lately on Amazon claim to be 12mm, but are actually only 11mm. These cause issues with filament allignment.
+	      I recommend getting these which are sold on eBay. Make sure to choose the 12mm option https://www.ebay.com/itm/331838761050
 
 #### Upper
 * (1x) Prusa MMU "Idler" motor (std d-shaft)
