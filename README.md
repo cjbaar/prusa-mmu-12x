@@ -57,7 +57,7 @@ stock code, it just doesn't make sense to try re-writing it anymore.
 ### The Potential (Unknown) News
 
 At the moment, flashing the MMU firmware is a relatively simple process, and the current
-printer firmware does not block filaments above slot 5 -- even though it does not
+stock printer firmware does not block filaments above slot 5 -- even though it does not
 understand how to process or access them from the menu functions.
 
 As of now (Oct 2024), Prusa is currently working toward a firmware model wherein
@@ -66,6 +66,8 @@ copy of the MMU firmware, and be responsible for updating it as necessary. I hav
 idea how those changes will affect the ability to side-load custom firmware onto
 the MMU directly. If we have to get into changing the printer firmware itself, things
 become more complicated. We will have to wait and see for now.
+
+__Update 03/2026__: I am still using stock printer firmware (6.5.3) without issue. There is no need to use custom printer firmware with the MMU3.
 
 
 ## Hardware
