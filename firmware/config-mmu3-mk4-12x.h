@@ -104,6 +104,7 @@ static constexpr U_mm pulleyHelperMove = 10.0_mm; ///< Helper move for Load/Unlo
 static constexpr U_mm cutLength = 8.0_mm;
 static constexpr U_mm fsensorToNozzle = 30.0_mm; ///< ~20mm from MK4's filament sensor through extruder gears into nozzle
 static constexpr U_mm fsensorToNozzleAvoidGrind = 5.0_mm;
+static constexpr U_mm fsensorToNozzleAvoidGrindUnload = 0.0_mm;
 /// Check the state of FSensor after this amount of filament got (hopefully) pulled out while unloading.
 static constexpr U_mm fsensorUnloadCheckDistance = 40.0_mm;
 
@@ -116,6 +117,7 @@ static constexpr AxisConfig pulley = {
     .iHold = 0, /// 17mA in SpreadCycle, freewheel in StealthChop
     .stealth = false,
     .stepsPerUnit = (200 * 8 / 37.384921),
+    .stepsPerUnitReciprocal = 1 / ((200 * 8 / 37.384921)),
     .sg_thrs = 8,
 };
 
@@ -142,6 +144,7 @@ static constexpr AxisConfig selector = {
     .iHold = 0, /// 17mA in SpreadCycle, freewheel in StealthChop
     .stealth = false,
     .stepsPerUnit = (200 * 8 / 8.),
+    .stepsPerUnitReciprocal = 1 / ((200 * 8 / 8.)),
     .sg_thrs = 3,
 };
 
@@ -200,6 +203,7 @@ static constexpr AxisConfig idler = {
     .iHold = 5, /// 99mA - parked current
     .stealth = false,
     .stepsPerUnit = (200 * 16 / 360.),
+    .stepsPerUnitReciprocal = 1 / ((200 * 16 / 360.)),
     .sg_thrs = 7,
 };
 
