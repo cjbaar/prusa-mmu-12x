@@ -28,7 +28,9 @@ New features now also include:
 
 *(That being said, I -- and others -- have had a great deal of luck using this model, or I wouldn't be sharing it.)*
 
-## Software & Firmware
+## Firmware
+
+See update notes on version [3.0.4](https://github.com/cjbaar/prusa-mmu-12x/discussions/51).
 
 ### The Good News
 
@@ -133,6 +135,7 @@ The following pieces are required for assembly. Items in italics may not be incl
 * *(1x) m10 OR m6 PTFE quick-fit connector*
 * (2x) 5mm brass sleeve, cut to 20mm length
 * (1x) FINDA sensor
+* (1x) Sensor ball
 
 #### Brackets
 * *(2x) m3x8mm screw*
