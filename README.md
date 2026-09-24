@@ -1,3 +1,13 @@
+# !!! WARNING !!!
+
+Prusa is now blocking tool commands for community mods like this
+on the CoreOne/L latest firmware. Unless they decide to reverse course,
+upgrading past firmware version 6.5.7 will break this version of the
+MMU3 with a hard-reset and error message mid-print.
+
+To say I am disappointed with this approach is an understatement. I will
+not be purchasing any more printers from Prusa Research in the future.
+
 # Prusa MMU2/MMU3 Modification for 12 Filaments
 <img src="./img/mmu3.jpeg" width="640" />
 
