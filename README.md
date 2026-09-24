@@ -1,4 +1,4 @@
-# !!! WARNING !!!
+> ⚠️ **WARNING** ⚠️
 
 Prusa is now blocking tool commands for community mods like this
 on the CoreOne/L latest firmware. Unless they decide to reverse course,
